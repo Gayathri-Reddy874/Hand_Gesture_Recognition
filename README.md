@@ -120,7 +120,6 @@ Run all cells in order. A window will open showing your webcam feed — bring yo
 
 ## 🔭 Future Improvements
 
-- [ ] Convert the notebook into a standalone `app.py` script for easier reuse
 - [ ] Auto-calibrate the pixel distance range at startup
 - [ ] Add on-screen brightness percentage overlay
 - [ ] Extend gestures to control volume, media playback, or other system settings
