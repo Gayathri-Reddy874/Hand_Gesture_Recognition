@@ -9,7 +9,7 @@
 
 ## 📖 Overview
 
-This project enables **touch-free screen brightness control** using real-time hand gesture recognition. A webcam feed is processed to track your hand, and the distance between your **thumb** and **index finger** is mapped directly to your display's brightness level — pinch your fingers together to dim the screen, spread them apart to brighten it.
+This project enables **touch-free screen brightness control** using real-time hand gesture recognition. A webcam feed is processed to track your hand, and the distance between your **thumb** and **index finger** is mapped directly to your display's brightness level - pinch your fingers together to dim the screen, spread them apart to brighten it.
 
 It combines **computer vision**, **gesture recognition**, and **human-computer interaction (HCI)** principles into a simple, interactive demo, and is easily extendable to control other system settings like volume or media playback.
 
@@ -47,7 +47,7 @@ Extract thumb tip (landmark 4) & index tip (landmark 8)
 Compute Euclidean distance (math.hypot)
     │
     ▼
-Map distance range (≈15–220 px) → brightness range (0–100%) via np.interp
+Map distance range (≈15-220 px) → brightness range (0-100%) via np.interp
     │
     ▼
 Apply brightness (Screen Brightness Control) + draw visual feedback
@@ -57,7 +57,7 @@ Apply brightness (Screen Brightness Control) + draw visual feedback
 2. Each frame is processed through MediaPipe's **Hands** module to detect hand landmarks.
 3. The coordinates of the **thumb tip** (landmark 4) and **index fingertip** (landmark 8) are extracted.
 4. The distance between these two points is calculated using the Euclidean distance formula (`hypot`).
-5. This distance is interpolated from a fixed pixel range (e.g., 15–220 px) to a brightness range (0–100%) using `numpy.interp`.
+5. This distance is interpolated from a fixed pixel range (e.g., 15-220 px) to a brightness range (0-100%) using `numpy.interp`.
 6. The resulting brightness value is applied in real time using the `screen-brightness-control` library.
 7. Lines and circles are drawn between the thumb and index finger on the live feed as visual feedback.
 8. The loop continues until the user presses **`q`** to quit.
@@ -101,7 +101,7 @@ pip install -r requirements.txt
 jupyter notebook "Hand Gesture.ipynb"
 ```
 
-Run all cells in order. A window will open showing your webcam feed — bring your thumb and index finger into view to start controlling brightness.
+Run all cells in order. A window will open showing your webcam feed - bring your thumb and index finger into view to start controlling brightness.
 
 ## 💡 Usage
 
@@ -115,8 +115,8 @@ Run all cells in order. A window will open showing your webcam feed — bring yo
 ## ⚠️ Notes & Limitations
 
 - Requires good, even lighting for reliable hand detection.
-- `screen-brightness-control` support varies by OS and hardware — it works most reliably on Windows and Linux; external/some laptop displays on macOS may not be controllable via software.
-- The 15–220 px distance range is calibrated generally; you may need to tune it for your webcam's resolution and distance from the camera.
+- `screen-brightness-control` support varies by OS and hardware - it works most reliably on Windows and Linux; external/some laptop displays on macOS may not be controllable via software.
+- The 15-220 px distance range is calibrated generally; you may need to tune it for your webcam's resolution and distance from the camera.
 - Currently detects a single hand; behavior with multiple hands in frame is not explicitly handled.
 
 ## 🔭 Future Improvements
