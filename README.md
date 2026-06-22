@@ -1,6 +1,6 @@
-# ✋ Hand Gesture–Controlled Screen Brightness
+# ✋ Hand Gesture - Controlled Screen Brightness
 
-> Adjust your screen brightness with a pinch — no keyboard, no mouse, just your hand and a webcam.
+> Adjust your screen brightness with a pinch - no keyboard, no mouse, just your hand and a webcam.
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8.svg)](https://opencv.org/)
@@ -18,8 +18,8 @@ It combines **computer vision**, **gesture recognition**, and **human-computer i
 - 🖐️ Real-time hand tracking using **MediaPipe's Hands module**
 - 📏 Measures Euclidean distance between thumb tip and index fingertip
 - 💡 Dynamically adjusts system brightness via **Screen Brightness Control (SBC)**
-- 🎥 Live visual feedback — draws landmarks, a connecting line, and a midpoint circle on the video feed
-- ⌨️ Simple exit control — press **`q`** to quit
+- 🎥 Live visual feedback - draws landmarks, a connecting line, and a midpoint circle on the video feed
+- ⌨️ Simple exit control - press **`q`** to quit
 - 🧩 Lightweight, dependency-minimal, and easy to extend to other gesture-based controls
 
 ## 🛠️ Tech Stack
@@ -66,7 +66,8 @@ Apply brightness (Screen Brightness Control) + draw visual feedback
 
 ```
 Hand_Gesture_Recognition/
-├── Hand Gesture.ipynb   # Main notebook: hand tracking + brightness control logic
+├── Hand Gesture.ipynb    # Main notebook: hand tracking + brightness control logic
+├── app.py                # app.py script for easier reuse
 ├── requirements.txt      # Python dependencies
 └── README.md
 ```
@@ -137,6 +138,9 @@ This project is open source. Consider adding a `LICENSE` file (e.g. MIT) to clar
 ## 👩‍💻 Author
 
 **Mallareddygari Gayathri**
+
+AI & ML Engineer 
+
 GitHub: [@Gayathri-Reddy874](https://github.com/Gayathri-Reddy874)
 
 ---
